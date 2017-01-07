@@ -37,9 +37,9 @@ You can build the container yourself if you prefer:
 docker build . -t you/filedrop
 ```
 
-## Mounting behind nginx
+## Running behind nginx
 
-Assuming you want to run your application under '/uploads' using nginx,
+Assuming you want to run your application under `/uploads` using nginx,
 this config section does the trick:
 
 ```
@@ -54,6 +54,15 @@ Then run the container on the appropriate port:
 ```
 docker run -p 5555:5000 -d --name filedrop -v /some/place:/app/uploads leucos/filedrop
 ```
+
+or the app if you prefer:
+
+```
+FLASK_APP=filedrop.py flask run --port 5555
+```
+
+The `X-Mount` option will help `filedrop` relocate itself at the proper
+location. It is not needed if you want to serve the app at `/`.
 
 ## Credits
 
