@@ -5,7 +5,6 @@
   <script src="static/js/dropzone.min.js"></script>
 </head>
 <body>
-    <form action="{{ request.headers.get('X-Mount') }}" class="dropzone"></form>
-
+    <form action="{{ request.headers.get('X-Mount', default='/') }}" class="dropzone"></form>
 </body>
 </html>

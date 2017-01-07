@@ -14,7 +14,7 @@ sudo pip3 install -r requirements.txt
 then run the app:
 
 ```
-FLASK_APP=upload.py flask run
+FLASK_APP=filedrop.py flask run
 ```
 
 Head to http://localhost:5000

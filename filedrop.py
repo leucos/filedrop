@@ -19,6 +19,7 @@ def index():
     if request.method == 'POST' and 'file' in request.files:
         filename = fileset.save(request.files['file'])
         return filename
+
     return render_template('upload.html')
 
 
