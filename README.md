@@ -3,6 +3,7 @@
 This small app lets you start a quick upload server. Files will not be
 clobbered by subsequent uploads.
 
+A docker image is ready to use at https://hub.docker.com/r/leucos/filedrop/
 ## Run using source
 
 Install requirements:
