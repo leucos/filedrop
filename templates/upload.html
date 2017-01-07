@@ -1,0 +1,11 @@
+<html>
+<head>
+	<title>Upload</title>
+    <link href="static/css/dropzone.css" type="text/css" rel="stylesheet" />
+  <script src="static/js/dropzone.js"></script>
+</head>
+<body>
+    <form action="{{ request.headers.get('X-Mount') }}" class="dropzone"></form>
+
+</body>
+</html>
