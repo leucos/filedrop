@@ -51,7 +51,9 @@ location ~ ^/upload(/?)(.*)$ {
 
 Then run the container on the appropriate port:
 
+```
 docker run -p 5555:5000 -d --name filedrop -v /some/place:/app/uploads leucos/filedrop
+```
 
 ## Credits
 
