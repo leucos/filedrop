@@ -31,6 +31,12 @@ it from host:
 docker run -p 80:5000 -d --name filedrop -v /some/place:/app/uploads leucos/filedrop
 ```
 
+You can build the container yourself if you prefer:
+
+```
+docker build . -t you/filedrop
+```
+
 ## Mounting behind nginx
 
 Assuming you want to run your application under '/uploads' using nginx,
