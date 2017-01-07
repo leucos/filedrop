@@ -1,5 +1,8 @@
 # Simple multi filedrop Flask application
 
+This small app lets you start a quick upload server. Files will not be
+clobbered by subsequent uploads.
+
 ## Run using source
 
 Install requirements:
@@ -45,3 +48,4 @@ docker run -p 5555:5000 -d --name filedrop -v /some/place:/app/uploads leucos/fi
 ## Credits
 
 Contains `dropzonejs` (http://www.dropzonejs.com/).
+Made with <3 by @leucos
