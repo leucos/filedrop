@@ -17,6 +17,8 @@ then run the app:
 FLASK_APP=upload.py flask run
 ```
 
+Head to http://localhost:5000
+
 Uploaded files will be in `./uploads/`.
 
 ## Run using container
@@ -47,5 +49,8 @@ docker run -p 5555:5000 -d --name filedrop -v /some/place:/app/uploads leucos/fi
 
 ## Credits
 
-Contains `dropzonejs` (http://www.dropzonejs.com/).
+Released under WTFPL licence https://en.wikipedia.org/wiki/WTFPL
+except for the contained `dropzonejs` code (http://www.dropzonejs.com/).
+
 Made with <3 by @leucos
+
